@@ -1,5 +1,5 @@
 # Pehchan
-A simple resident app which saves user's Aadhar info and verifies his/her data from it. Both the archives contain same files. The different formats are provided for ease of access.
+A simple resident app which saves user's Aadhar info and verifies his/her data from it. Both archives must be extracted and merged into one folder for the app to run.
 
 
 # Verifier
