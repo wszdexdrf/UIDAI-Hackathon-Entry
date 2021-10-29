@@ -25,6 +25,9 @@ The app verifies the data it receives (directly from UIDAI servers, always). Thi
 
 **Sidenote:** Here I had a lot of problem with UIDAI API. I could not verify the signature of the XML. There are two parts of signature verification, first "Digest Value" which is a hash of the data in the XML. So if the XML data is changed, the hash will not match. Second is encryption of that Digest Value using asymmetric keys, so that someone can't change the hash along with the data in the xml. I was able to match the Digest Value, but could not match the Signature info. When I used the private keys provided and generated the signature myself, I could verify that using the same code. (Though that would be not be useful if I verified my own Signature) I deduced that there may be some discrepancy in either the server-side keys or in the APIs I was using, therefore my code only matches the digest value for now. Another API was provided midway in the hackathon, but it required changing a lot of things (And I was losing password safety) therefore I went ahead with the old API. If the XML is simply changed, then it won't match and an error would be raised. I think that would be enough given that the zip file is already password protected.
 
+## Offline Mode
+The App also works in offline mode. This does your verification via your device login info (pin, fingerprint etc.). Rest of the functionality is same. 
+
 ## About Verifier App
 A sample Verifier app is also provided. That is a simple app which just scans a QR code, decrypts it using a public key (certificate is packaged with app) and then verifies its tags. It also checks if the QR code was generated in the last 5 minutes. Then it displays the information on the screen with a small Tick or Cross indicating if the data was verified or not. 
 
