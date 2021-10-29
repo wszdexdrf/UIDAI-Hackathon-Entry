@@ -3,7 +3,7 @@ A simple resident app which saves user's Aadhar info and verifies his/her data f
 
 
 # Verifier
-A sample verifier app which authenticates data sent by Resident app.
+A sample verifier app which authenticates data produced by Resident app.
 
 ---
 
