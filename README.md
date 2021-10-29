@@ -1,5 +1,5 @@
 # Demo link
-A video demonstration can be viewed at https://youtu.be/Rno-iW0YMEo. Note that this is not exhastive demo of all features.
+A video demonstration can be viewed at https://youtu.be/Rno-iW0YMEo. Note that this is not exhastive demo of all features. The artifactin visible is due to compression/encoding in the smartphone. The video may be edited out of order, but the core functionality is the same as mentioned below and the code is completely working. 
 
 # Pehchan
 A simple resident app which saves user's Aadhar info and verifies his/her data from it. Both archives must be extracted and merged into one folder for the app to run.
@@ -11,7 +11,7 @@ A sample verifier app which authenticates data produced by Resident app.
 ---
 
 ## About Pehchan (Resident) App
-The Pehchan app is a simple app with the help of which you can verify your identiy (Name, gender and dob) and check in quickly at hotels, airline etc. The app will generate a secure QR code which the would be scanned at the reception of hotel, airline etc. which would enable them to confirm your identity and only let you in for your booking. You just need to add your info the first time, then you can freely verify yourself using "Your Pehchan" button or selecting your info.
+The Pehchan app is a simple app with the help of which you can verify your identiy **(Name, gender and dob)** and check in quickly at hotels, airline etc. The app will generate a secure QR code which the would be scanned at the reception of hotel, airline etc. which would enable them to confirm your identity and only let you in for your booking. You just need to add your info the first time, then you can freely verify yourself using "Your Pehchan" button or selecting your entry from the saved people.
 
 ### Data stored on your phone
 The app stores a password protected zip file containing your XML. Each password is randomly generated 4 digit number You don't need to remember your passwords as the app will manage that itself. Your Aadhar number is not stored on the phone, so you can rest assured! 
@@ -19,7 +19,7 @@ The app stores a password protected zip file containing your XML. Each password 
 **Sidenote:** I wanted to encrypt the file containing the passwords and file names, but then realised that it would generate another key which I would have to store somewhere again. Therefore the file containing the zip passwords is simply kept in the private folder of the app. In case the user's phone is rooted, he would compromise the security of this app.
 
 ### Secure QR Code
-The app generates a String of your information (non critical, which is only Name, Date of Birth, Gender and Time stamp ) and encrypts it using RSA algorithm. This data can now be decrypted by a public key available to anyone. Anyone who decrypts this information can be sure that this information was sent only by a Pehchan app and nothing else. Also, the QR code is valid only till 5 minutes after generetion, so noone can take your QR code's photograph and check-in at your bookings.
+The app generates a String of your information (non critical, which is only Name, Date of Birth, Gender and Time stamp ) and encrypts it using RSA algorithm. This data can now be decrypted by a public key available to anyone. Anyone who decrypts this information can be sure that this information was sent only by a Pehchan app and nothing else. Also, the QR code is valid only till **5 minutes after generetion**, so noone can take your QR code's photograph and check-in at your bookings.
 
 **Sidenote:** The public-private key pair is the same as the one provided by UIDAI. The Verifier app contains the certificate already. Ideally, a different key pair should be used for each client-verifier, but I was unable to find a secure way of communicating the public key to the verifier, as anyone nefarious can also providea a public key for his private key.
 
