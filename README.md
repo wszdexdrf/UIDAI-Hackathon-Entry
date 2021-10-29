@@ -40,5 +40,4 @@ The App also works in offline mode. This does your verification via your fingerp
 ## About Verifier App
 A sample Verifier app is also provided. That is a simple app which just scans a QR code, decrypts it using a public key (certificate is packaged with app) and then verifies its tags. It also checks if the QR code was generated in the last 5 minutes. Then it displays the information on the screen with a small Tick or Cross indicating if the data was verified or not. 
 
-# About format of projects
-All projects provided in archives. These are Android studio projects, and should run fine when executed through the same on any android phone. All dependencies are indicated in the gradle file and are automatically resolved. Both the app require minimum Android SDK 26 (Oreo).
+Both the apps require minimum Android SDK 26 (Oreo).
