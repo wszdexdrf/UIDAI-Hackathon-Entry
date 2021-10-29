@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Pehchan</string>
+    <string name="your_pehchan">Your Pehchan</string>
+    <string name="saved_people">Saved People</string>
+    <string name="add_new">Add new</string>
+    <string name="add_new_person">add new person</string>
+    <string name="background_image">Background image</string>
+    <string name="aadhar_number">Aadhar Number</string>
+    <string name="captcha">Captcha</string>
+    <string name="next">Next</string>
+    <string name="refresh">Refresh</string>
+    <string name="submit">Submit</string>
+    <string name="enter_otp">OTP</string>
+    <string name="do_not_ignore_unexpected_otps">Do not ignore unexpected OTPs. We will never send OTP without your knowledge.</string>
+    <string name="opt_prompt">An OTP was sent to your phone number ending with xxxxxxxx</string>
+    <string name="choose_name">Select Aadhar entry</string>
+    <string name="remove">Remove selected</string>
+    <string name="overwrite">Overwrite</string>
+    <string name="overwrite_message">There is already an entry with similar name. Do you want to overwrite?</string>
+    <string name="offline">Offline</string>
+
+
+</resources>
