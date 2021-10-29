@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Verifier</string>
+    <string name="scan">Scan a token from Resident app</string>
+    <string name="name">Name</string>
+    <string name="gender">Gender</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="not_verified">Not Verified</string>
+    <string name="verified">Verified</string>
+    <string name="timeout">The QR code has timed out.</string>
+</resources>
