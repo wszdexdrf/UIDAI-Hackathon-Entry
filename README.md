@@ -1,3 +1,6 @@
+# Demo link
+A video demonstration can be viewed at https://youtu.be/Rno-iW0YMEo. Note that this is not exhastive demo of all features.
+
 # Pehchan
 A simple resident app which saves user's Aadhar info and verifies his/her data from it. Both archives must be extracted and merged into one folder for the app to run.
 
